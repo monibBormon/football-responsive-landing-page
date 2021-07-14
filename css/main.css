@@ -7,17 +7,18 @@
  ------------------*/
  body{
      margin: 0;
+     box-sizing: border-box;
      font-size: 16px;
      color: #6C6C6C;
      font-family: 'Poppins', sans-serif;
  }
  .container-full{
     width: 1170px;
-      margin: auto;
+      margin: 0 auto;
 }
 .container{
     width: 1100px;
-    margin: auto
+    margin: 0 auto
 }
 
  /*-------------
@@ -85,7 +86,7 @@
       height: 440px;
       transition: .3s;
   }
-  .header-area:hover .hero-bg img{
+  .hero-bg:hover img{
       transform: scale(.9)translateY(30px);
   }
 
@@ -182,7 +183,7 @@
   club brand styles
   -------------------- */
   .club-brand{
-      padding-bottom: 50px;
+      padding: 30px 30px 50px;
   }
   h2.section-title {
     font-size: 60px;
@@ -224,4 +225,228 @@ hr{
         padding: 10px;
         border-radius: 30px;
         line-height: 20px;
+    }
+
+
+    /* media query styles */
+
+    /* mobile device */
+    @media only screen and (max-width: 600px) {
+        .container-full{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container{
+            width: 100%;
+            overflow: hidden;
+        }
+        h2.section-title {
+            font-size: 40px;
+        }
+        .header-top-bar{
+            display: none;
+        }
+        .hero-area{
+            display: block;
+            padding: 30px;
+        }
+        .hero-text h1{
+            font-size: 40px;
+        }
+        .hero-area .common-btn{
+            margin-bottom: 20px;
+        }
+        .hero-bg img{
+            width: 350px;
+            height: 250px;
+        }
+        .players{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .player-info h3{
+            font-size: 20px;
+        }
+        .player-img img{
+            width: 100%;
+        }
+        .matches{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .single-team{
+            margin: auto;
+        }
+        .highlights{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .highlight-details{
+            padding: 20px;
+        }
+        .highlight-details h2{
+            font-size: 35px;
+        }
+        .highlight-banner img{
+            margin-top: 20px;
+        }
+        .clubs{
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap:20px;
+        }
+        .footer-logo img{
+            width: 350px;
+            height: 90px;
+        }
+
+
+    }
+
+    /* tablet devices */
+    @media only screen and (min-width: 601px) and (max-width:768px) {
+        body{
+            font-size: 14px;
+        }
+        .container-full{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container{
+            width: 100%;
+            overflow: hidden;
+        }
+        .header-area{
+            padding:20px 0;
+        }
+        .header-top-bar .menu li{
+            padding: 10px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .login{
+            padding: 8px 18px;
+            margin-right: 5px;
+        }
+        h2.section-title {
+            font-size: 40px;
+        }
+        .hero-area{
+            padding: 20px;
+        }
+        .hero-text h1{
+            font-size: 40px;
+        }
+        .hero-area .common-btn{
+            margin-bottom: 20px;
+        }
+        .hero-bg img{
+            width: 400px;
+            height: 350px;
+        }
+        .players{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .player-info h3{
+            font-size: 25px;
+        }
+        .player-img img{
+            width: 100%;
+        }
+        .single-team{
+            margin: auto;
+        }
+        .single-team img{
+            width: 200px;
+            height: 200px;
+        }
+        .highlight-details{
+            padding: 20px;
+        }
+        .highlight-details h2{
+            font-size: 36px;
+        }
+        .highlight-banner img{
+            margin-top: 80px;
+        }
+        .clubs{
+            grid-template-columns: repeat(2,1fr);
+            grid-row-gap:10px;
+        }
+        .single-club{
+            margin: 0 10px;
+        }
+
+
+    }
+
+    /* laptop device */
+    @media only screen and (min-width: 769px) and (max-width:991px){
+        .container-full{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container{
+            width: 100%;
+            overflow: hidden;
+        }
+        .header-area{
+            padding: 10px 30px;
+        }
+        .header-top-bar .menu li{
+            padding: 10px 15px;
+            margin-right: 0;
+            font-size: 14px;
+        }
+        .login{
+            padding: 8px 18px;
+            margin-right: 5px;
+        }
+        .hero-text h1 {
+            font-size: 40px;
+        }
+        .hero-bg img{
+            width: 400px;
+            height: 300px;
+            margin-top: 10px;
+        }
+        .player-info h3{
+            font-size: 22px;
+        }
+        h2.section-title{
+            font-size: 40px;
+        }
+        .single-team{
+            margin: auto;
+        }
+        .highlight-area{
+            padding: 20px;
+        }
+        .highlight-details h2{
+            font-size: 38px;
+        }
+        .clubs{
+            grid-template-columns: repeat(3,1fr);
+            grid-row-gap:15px
+        }
+
+    }
+
+    /* big device */
+    @media only screen and (min-width: 992px) and (max-width:1400px) {
+        .container-full{
+            width: 100%;
+            overflow: hidden;
+        }
+        .container{
+            width: 100%;
+            overflow: hidden;
+        }
+        .header-area{
+            padding: 30px;
+        }
+        .single-team{
+            margin: auto;
+        }
+        .highlight-area{
+            padding: 30px;
+        }
+
+
     }
