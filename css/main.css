@@ -1,0 +1,88 @@
+/*------------
+      fonts------- */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/*------------
+ Common styles 
+ ------------------*/
+ body{
+     margin: 0;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /*-------------
+  header area styles 
+  ----------------------*/
+  .header-area{
+      background-color: #2D25A0;
+      color: #fff;
+  }
+  .container-full{
+      width: 1170px;
+        margin: auto;
+  }
+  .header-top-bar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .header-top-bar .menu li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 40px 0;
+      margin-right: 35px;
+  }
+  .header-top-bar .menu li a{
+      color: #fff;
+      text-decoration: none;
+  }
+  /* -----button styles------- */
+  .login,.common-btn{
+      background-color: #E02C6D;
+      font-size: 16px;
+      padding: 10px 40px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+      border-radius: 1px;
+      border: 2px solid transparent;
+      transition: .3s;
+
+  }
+  .login i{
+      margin-right: 10px;
+      transition: .3s;
+  }
+  .login:hover i{margin-right: 20px;}
+  .common-btn:hover,.login:hover{
+      background-color:transparent;
+      border: 2px solid #E02C6D;
+  }
+  .common-btn i{
+      margin-left: 10px;
+      transition: .3s;
+    }
+  .common-btn:hover i{
+      margin-left: 20px;
+}
+
+  .hero-area{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 60px;
+  }
+  .hero-text h1{
+      font-size: 64px;
+  }
+  .hero-bg img{
+      width: 550;
+      height: 440px;
+      transition: .3s;
+  }
+  .hero-bg img:hover{
+      transform: scale(.9)translateY(30px);
+  }
